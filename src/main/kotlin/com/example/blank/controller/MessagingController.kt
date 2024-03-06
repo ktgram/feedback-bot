@@ -4,9 +4,9 @@ import com.example.blank.utils.*
 import eu.vendeli.tgbot.TelegramBot
 import eu.vendeli.tgbot.annotations.InputHandler
 import eu.vendeli.tgbot.annotations.UnprocessedHandler
-import eu.vendeli.tgbot.api.copyMessage
-import eu.vendeli.tgbot.api.forwardMessage
-import eu.vendeli.tgbot.api.message
+import eu.vendeli.tgbot.api.message.copyMessage
+import eu.vendeli.tgbot.api.message.forwardMessage
+import eu.vendeli.tgbot.api.message.message
 import eu.vendeli.tgbot.types.User
 import eu.vendeli.tgbot.types.chat.ChatType
 import eu.vendeli.tgbot.types.internal.MessageUpdate
