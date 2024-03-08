@@ -4,7 +4,7 @@ Feedback Bot, allows you to make a bot in which users can directly contact you a
 
 To make it work, change the token to your own, add the bot to the chat, give it administrative rights.
 
-#### Attention. Note that the chat should be a supergroup where topics are included for it to work correctly.
+#### Attention. Note that the chat should be a supergroup where topics are turned on for it to work correctly.
 
 When some user writes to the bot, it will create a separate topic for him and redirect all his messages there, and your replies in this topic will be duplicated to the user.
 Also, if you close the topic, the user will not be able to write messages to you, in order
