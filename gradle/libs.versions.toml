@@ -1,10 +1,10 @@
 [versions]
-tg-bot = "5.0.1"
+tg-bot = "5.5.0"
 ksp = "2.0.0-1.0.22"
-exposed = "0.46.0"
-sqlite = "3.44.1.0"
+exposed = "0.52.0"
+sqlite = "3.46.0.0"
 
-kotlin = "1.9.22"
+kotlin = "1.9.24"
 
 [libraries]
 tg-bot = { module = "eu.vendeli:telegram-bot", version.ref = "tg-bot" }
