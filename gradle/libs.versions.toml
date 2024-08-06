@@ -4,7 +4,7 @@ ksp = "2.0.0-1.0.24"
 exposed = "0.53.0"
 sqlite = "3.46.0.1"
 
-kotlin = "2.0.0"
+kotlin = "2.0.10"
 
 [libraries]
 tg-bot = { module = "eu.vendeli:telegram-bot", version.ref = "tg-bot" }
