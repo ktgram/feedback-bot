@@ -1,5 +1,5 @@
 [versions]
-tg-bot = "6.6.0"
+tg-bot = "7.2.1"
 ksp = "2.0.10-1.0.24"
 exposed = "0.53.0"
 sqlite = "3.46.1.0"
