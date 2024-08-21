@@ -23,7 +23,7 @@ fun getTgId(topicId: Int): Long? = transaction {
 
 suspend fun ensureTopic(tgId: Long, bot: TelegramBot) = getTopicData(tgId).let { data ->
     if (data == null) {
-        val threadId = createForumTopic("$tgId").sendAsync(CHAT_ID, bot).getOrNull()!!.messageThreadId
+        val threadId = createForumTopic("$tgId").sendReturning(CHAT_ID, bot).getOrNull()!!.messageThreadId
         transaction {
             Topics.insert {
                 it[Topics.tgId] = tgId

@@ -33,7 +33,7 @@ class MessagingController {
                 // or use copyMessage for user anonymity
                 forwardMessage(user, update.message.messageId).options {
                     messageThreadId = topic.first
-                }.sendAsync(CHAT_ID, bot).onFailure {
+                }.sendReturning(CHAT_ID, bot).onFailure {
                     // if topic not found remove record in database
                     if (it.description?.contains("message thread not found") == true) removeTopic(user.id)
                     retryMessage(update, bot) // send retry msg

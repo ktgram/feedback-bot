@@ -20,7 +20,7 @@ fun main() = runBlocking {
     }
 
     // save bot info
-    getMe().sendAsync(bot).getOrNull()?.also {
+    getMe().sendReturning(bot).getOrNull()?.also {
         saveBotId(it.id)
     }
 

@@ -1,9 +1,12 @@
-val jvmTargetVersion = JavaVersion.VERSION_11
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
+val jvmTargetVersion = JavaVersion.VERSION_17
 
 plugins {
     application
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.telegram.bot)
 }
 
 group = "com.example.blank"
@@ -17,23 +20,15 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.tg.bot)
-    ksp(libs.tg.ksp)
-
     implementation(libs.exposed.core)
     implementation(libs.exposed.dao)
     implementation(libs.exposed.jdbc)
     implementation(libs.sqlite.driver)
 }
 
-tasks {
-    compileJava {
-        targetCompatibility = jvmTargetVersion.majorVersion
+kotlin {
+    compilerOptions {
+        jvmTarget = JvmTarget.fromTarget(jvmTargetVersion.majorVersion)
     }
-    compileKotlin {
-        kotlinOptions {
-            jvmTarget = jvmTargetVersion.majorVersion
-            javaParameters = true
-        }
-    }
+    jvmToolchain(jvmTargetVersion.majorVersion.toInt())
 }

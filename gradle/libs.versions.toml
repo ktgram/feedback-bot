@@ -1,5 +1,5 @@
 [versions]
-tg-bot = "6.6.0"
+tg-bot = "7.2.2"
 ksp = "2.0.10-1.0.24"
 exposed = "0.53.0"
 sqlite = "3.46.1.0"
@@ -7,13 +7,12 @@ sqlite = "3.46.1.0"
 kotlin = "2.0.10"
 
 [libraries]
-tg-bot = { module = "eu.vendeli:telegram-bot", version.ref = "tg-bot" }
-tg-ksp = { module = "eu.vendeli:ksp", version.ref = "tg-bot" }
 exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
 exposed-dao = { module = "org.jetbrains.exposed:exposed-dao", version.ref = "exposed" }
 exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
 sqlite-driver = { module = "org.xerial:sqlite-jdbc", version.ref = "sqlite" }
 
 [plugins]
+telegram-bot = { id = "eu.vendeli.telegram-bot", version.ref = "tg-bot" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
