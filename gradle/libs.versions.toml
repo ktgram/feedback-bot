@@ -4,7 +4,7 @@ ksp = "2.0.10-1.0.24"
 exposed = "0.53.0"
 sqlite = "3.46.1.0"
 
-kotlin = "2.0.10"
+kotlin = "2.0.20"
 
 [libraries]
 exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
