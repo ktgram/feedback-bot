@@ -6,7 +6,7 @@ import eu.vendeli.tgbot.api.message.message
 import eu.vendeli.tgbot.types.User
 
 class StartController {
-    @CommandHandler(["/test"])
+    @CommandHandler(["/start"])
     suspend fun start(user: User, bot: TelegramBot) {
         // catch start command
         message {
