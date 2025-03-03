@@ -1,7 +1,7 @@
 [versions]
 tg-bot = "7.9.0"
 ksp = "2.1.10-1.0.31"
-exposed = "0.59.0"
+exposed = "0.60.0"
 sqlite = "3.49.1.0"
 
 kotlin = "2.1.10"
