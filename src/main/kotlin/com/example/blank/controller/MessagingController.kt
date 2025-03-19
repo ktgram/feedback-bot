@@ -9,8 +9,8 @@ import eu.vendeli.tgbot.api.message.forwardMessage
 import eu.vendeli.tgbot.api.message.message
 import eu.vendeli.tgbot.types.User
 import eu.vendeli.tgbot.types.chat.ChatType
-import eu.vendeli.tgbot.types.internal.MessageUpdate
-import eu.vendeli.tgbot.types.internal.onFailure
+import eu.vendeli.tgbot.types.component.MessageUpdate
+import eu.vendeli.tgbot.types.component.onFailure
 
 class MessagingController {
     @InputHandler(["messaging"])

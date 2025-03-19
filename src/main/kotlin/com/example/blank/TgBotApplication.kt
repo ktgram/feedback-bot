@@ -5,7 +5,7 @@ import com.example.blank.entity.Topics
 import com.example.blank.utils.saveBotId
 import eu.vendeli.tgbot.TelegramBot
 import eu.vendeli.tgbot.api.botactions.getMe
-import eu.vendeli.tgbot.types.internal.getOrNull
+import eu.vendeli.tgbot.types.component.getOrNull
 import kotlinx.coroutines.runBlocking
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils

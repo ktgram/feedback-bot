@@ -2,7 +2,7 @@ package com.example.blank.utils
 
 import eu.vendeli.tgbot.TelegramBot
 import eu.vendeli.tgbot.api.message.message
-import eu.vendeli.tgbot.types.internal.MessageUpdate
+import eu.vendeli.tgbot.types.component.MessageUpdate
 
 
 suspend fun retryMessage(update: MessageUpdate, bot: TelegramBot) {

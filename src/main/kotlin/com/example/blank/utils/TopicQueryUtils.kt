@@ -3,7 +3,7 @@ package com.example.blank.utils
 import com.example.blank.entity.Topics
 import eu.vendeli.tgbot.TelegramBot
 import eu.vendeli.tgbot.api.forum.createForumTopic
-import eu.vendeli.tgbot.types.internal.getOrNull
+import eu.vendeli.tgbot.types.component.getOrNull
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.sql.deleteWhere
 import org.jetbrains.exposed.sql.insert
