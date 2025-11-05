@@ -2,7 +2,7 @@
 tg-bot = "8.4.1"
 ksp = "2.3.1"
 exposed = "0.61.0"
-sqlite = "3.50.3.0"
+sqlite = "3.51.0.0"
 
 kotlin = "2.2.21"
 
