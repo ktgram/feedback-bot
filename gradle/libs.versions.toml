@@ -1,6 +1,6 @@
 [versions]
 tg-bot = "9.2.1"
-ksp = "2.3.5"
+ksp = "2.3.6"
 exposed = "0.61.0"
 sqlite = "3.51.2.0"
 
