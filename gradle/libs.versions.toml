@@ -1,10 +1,10 @@
 [versions]
-tg-bot = "9.5.0"
+tg-bot = "9.6.0"
 ksp = "2.3.10"
 exposed = "0.61.0"
 sqlite = "3.53.2.0"
 
-kotlin = "2.4.0"
+kotlin = "2.4.10"
 
 [libraries]
 exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
